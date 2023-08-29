@@ -77,3 +77,4 @@ municipios_desarrollo_alternativo <- distritos |>
 	left_join(dict_provincias)
 
 write_rds(municipios_desarrollo_alternativo, "data-raw/municipios-desarrollo-alternativo.rds")
+# writexl::write_xlsx(municipios_desarrollo_alternativo, "data-raw/municipios-desarrollo-alternativo.xlsx")
