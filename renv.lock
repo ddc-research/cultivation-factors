@@ -89,6 +89,23 @@
       ],
       "Hash": "45f0398006e83a5b10b72a90663d8d8c"
     },
+    "S7": {
+      "Package": "S7",
+      "Version": "0.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "S7",
+      "RemoteRef": "S7",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "x86_64-w64-mingw32",
+      "RemoteSha": "0.1.1",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "7373b41e159901733e4e167d15394163"
+    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.1",
@@ -330,6 +347,16 @@
         "utils"
       ],
       "Hash": "3f038e5ac7f41d4ac41ce658c85e3042"
+    },
+    "codetools": {
+      "Package": "codetools",
+      "Version": "0.2-19",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "c089a619a7fae175d149d89164f8c7d8"
     },
     "colorspace": {
       "Package": "colorspace",
@@ -671,6 +698,49 @@
       ],
       "Hash": "47b5f30c720c23999b913a1a635cf0bb"
     },
+    "furrr": {
+      "Package": "furrr",
+      "Version": "0.3.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "furrr",
+      "RemoteRef": "furrr",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
+      "RemoteSha": "0.3.1",
+      "Requirements": [
+        "R",
+        "future",
+        "globals",
+        "lifecycle",
+        "purrr",
+        "rlang",
+        "vctrs"
+      ],
+      "Hash": "da7a4c32196cb2262a41dd5a25d486ff"
+    },
+    "future": {
+      "Package": "future",
+      "Version": "1.33.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "future",
+      "RemoteRef": "future",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
+      "RemoteSha": "1.33.0",
+      "Requirements": [
+        "digest",
+        "globals",
+        "listenv",
+        "parallel",
+        "parallelly",
+        "utils"
+      ],
+      "Hash": "8e92c7bc53e91b9bb1faf9a6ef0e8514"
+    },
     "gargle": {
       "Package": "gargle",
       "Version": "1.5.2",
@@ -746,6 +816,23 @@
         "withr"
       ],
       "Hash": "85846544c596e71f8f46483ab165da33"
+    },
+    "globals": {
+      "Package": "globals",
+      "Version": "0.16.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "globals",
+      "RemoteRef": "globals",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
+      "RemoteSha": "0.16.2",
+      "Requirements": [
+        "R",
+        "codetools"
+      ],
+      "Hash": "baa9585ab4ce47a9f4618e671778cc6f"
     },
     "glue": {
       "Package": "glue",
@@ -1000,6 +1087,27 @@
       ],
       "Hash": "99df65cfef20e525ed38c3d2577f7190"
     },
+    "infomidis": {
+      "Package": "infomidis",
+      "Version": "0.0.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "infomidis",
+      "RemoteUsername": "calderonsamuel",
+      "RemotePkgRef": "calderonsamuel/infomidis",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "f0e74a0e3c0b1ec8c76cb8b094d7488ee62191a8",
+      "Requirements": [
+        "glue",
+        "httr2",
+        "lubridate",
+        "magrittr",
+        "purrr",
+        "tibble"
+      ],
+      "Hash": "b446b1f29aa4d2e9fbf4f1443dcd8f02"
+    },
     "isoband": {
       "Package": "isoband",
       "Version": "0.2.7",
@@ -1150,6 +1258,22 @@
       ],
       "Hash": "001cecbeac1cff9301bdc3775ee46a86"
     },
+    "listenv": {
+      "Package": "listenv",
+      "Version": "0.9.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "listenv",
+      "RemoteRef": "listenv",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
+      "RemoteSha": "0.9.0",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "4fbd3679ec8ee169ba28d4b1ea7d0e8f"
+    },
     "lubridate": {
       "Package": "lubridate",
       "Version": "1.9.2",
@@ -1218,6 +1342,23 @@
         "utils"
       ],
       "Hash": "3460beba7ccc8946249ba35327ba902a"
+    },
+    "microbenchmark": {
+      "Package": "microbenchmark",
+      "Version": "1.4.10",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "microbenchmark",
+      "RemoteRef": "microbenchmark",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "x86_64-w64-mingw32",
+      "RemoteSha": "1.4.10",
+      "Requirements": [
+        "graphics",
+        "stats"
+      ],
+      "Hash": "db81b552e393ed092872cf7023469bc2"
     },
     "mime": {
       "Package": "mime",
@@ -1306,9 +1447,27 @@
       ],
       "Hash": "273a6bb4a9844c296a459d2176673270"
     },
+    "parallelly": {
+      "Package": "parallelly",
+      "Version": "1.36.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "parallelly",
+      "RemoteRef": "parallelly",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "i386+x86_64-w64-mingw32",
+      "RemoteSha": "1.36.0",
+      "Requirements": [
+        "parallel",
+        "tools",
+        "utils"
+      ],
+      "Hash": "bca377e1c87ec89ebed77bba00635b2e"
+    },
     "perutranspaeconomica": {
       "Package": "perutranspaeconomica",
-      "Version": "0.3.1",
+      "Version": "0.3.1.9000",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
@@ -1316,23 +1475,26 @@
       "RemoteUsername": "calderonsamuel",
       "RemotePkgRef": "calderonsamuel/perutranspaeconomica",
       "RemoteRef": "HEAD",
-      "RemoteSha": "07a89b7357fcf87ce29b7f03b56d95e487712eca",
+      "RemoteSha": "cd367b1f18771375e79606ef353f78ec6633dfb9",
       "Requirements": [
+        "S7",
         "cli",
         "dplyr",
         "glue",
         "httr2",
         "janitor",
+        "magrittr",
         "purrr",
         "readr",
         "rlang",
         "rvest",
         "stats",
+        "stringr",
         "tibble",
         "tidyr",
         "tidyselect"
       ],
-      "Hash": "f9adb758315a564a711d4aac6fa359cb"
+      "Hash": "10e283e3788224e9da14e380f22dbb79"
     },
     "pillar": {
       "Package": "pillar",
@@ -2153,6 +2315,19 @@
         "stats"
       ],
       "Hash": "c0e49a9760983e81e55cdd9be92e7182"
+    },
+    "writexl": {
+      "Package": "writexl",
+      "Version": "1.4.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "RemoteType": "standard",
+      "RemotePkgRef": "writexl",
+      "RemoteRef": "writexl",
+      "RemoteRepos": "https://cran.rstudio.com",
+      "RemotePkgPlatform": "x86_64-w64-mingw32",
+      "RemoteSha": "1.4.2",
+      "Hash": "43da939eaf6681c88eba977b9012dad9"
     },
     "xfun": {
       "Package": "xfun",
