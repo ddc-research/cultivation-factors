@@ -6,6 +6,8 @@ library(furrr)       # Parallel processing
 # Set up parallel processing
 plan(multisession)
 
+cli::cli_inform("Getting variable list")
+
 # Make a POST request to a URL and parse the JSON response into a tibble
 sirtod <- request("https://systems.inei.gob.pe/SIRTOD/app/consulta/arboltematico") |>
 	req_method(method = "POST") |>
@@ -51,6 +53,8 @@ get_sirtod_data <- function(indicador, tipo_ubigeo = 3, desde_anio = 2001, hasta
 		as_tibble()
 }
 
+cli::cli_inform("Starting download")
+
 # Create a column 'query' by applying the 'get_sirtod_data' function to each 'codigoIndicador'
 sirtod_download <- sirtod_pre_auto |>
 	mutate(query = future_map(codigoIndicador, safely(get_sirtod_data), .progress = TRUE))
@@ -68,5 +72,25 @@ sirtod_valid_data <- sirtod_download |>
 		dato = parse_number(dato)
 	)
 
+# Prepare for DB insertion
+db_lugares <- sirtod_valid_data |> 
+	distinct(ubigeo, departamento, provincia, distrito)
+
+db_indicadores <- sirtod_valid_data |> 
+	distinct(codigoIndicador, arbol, indicador)
+
+db_valores <- sirtod_valid_data |> 
+	select(codigoIndicador, ubigeo, año, dato)
+
+cli::cli_inform("Writing to disk")
+
 # Write the valid data to an .rds file
-write_rds(sirtod_valid_data, "data-raw/distrital-sirtod.rds")
+write_rds(db_lugares, "data-raw/sirtod-lugares.rds", compress = "xz")
+write_rds(db_indicadores, "data-raw/sirtod-indicadores.rds", compress = "xz")
+write_rds(db_valores, "data-raw/sirtod-valores.rds", compress = "xz")
+
+# Sound to inform completion
+walk(1:10, ~ {
+	Sys.sleep(1) 
+	beepr::beep(2)
+})
